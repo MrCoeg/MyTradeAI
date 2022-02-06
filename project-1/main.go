@@ -8,8 +8,8 @@ import (
 	"io"
 	"net/http"
 	"path"
-	"strconv"
-	internal "trading-ai/domain"
+	"time"
+	"trading-ai/domain"
 )
 
 func main() {
@@ -223,49 +223,54 @@ func main() {
 		charts[i].Name = coinName[i]
 	}
 
+	go func() {
+		for {
+			res, err := http.Get("https://indodax.com/api/tickers")
+
+			if err != nil {
+				panic(err)
+			}
+
+			defer res.Body.Close()
+			if res.StatusCode != 200 {
+				panic(errors.New("Not Connected"))
+			}
+
+			body, err := io.ReadAll(res.Body)
+			cryptocoins := domain.CryptoCoins{}
+
+			err = json.Unmarshal(body, &cryptocoins)
+			if err != nil {
+				panic(err)
+			}
+
+			coinList[0] = cryptocoins.Coins.AbyssIdr
+			coinList[1] = cryptocoins.Coins.TenIdr
+			coinList[2] = cryptocoins.Coins.DaxIdr
+			coinList[3] = cryptocoins.Coins.DentIdr
+			coinList[4] = cryptocoins.Coins.DogeIdr
+			coinList[5] = cryptocoins.Coins.GscIdr
+			coinList[6] = cryptocoins.Coins.HartIdr
+			coinList[7] = cryptocoins.Coins.MblIdr
+			coinList[8] = cryptocoins.Coins.NxtIdr
+			coinList[9] = cryptocoins.Coins.PandoIdr
+			coinList[10] = cryptocoins.Coins.SlpIdr
+			coinList[11] = cryptocoins.Coins.XrpIdr
+			// Update and Analyse
+
+			for i := 0; i < len(charts); i++ {
+				temp1, temp2 := UpdateChart(&charts[i], &cryptocoins, frameRate, interval, coinList[i])
+				coinValue[i] = temp2
+				coinStatus[i] = temp1
+			}
+
+			time.Sleep(30 * time.Second)
+		}
+	}()
+
 	// Request Data
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-
-		res, err := http.Get("https://indodax.com/api/tickers")
-
-		if err != nil {
-			panic(err)
-		}
-
-		defer res.Body.Close()
-		if res.StatusCode != 200 {
-			panic(errors.New("Not Connected"))
-		}
-
-		body, err := io.ReadAll(res.Body)
-		cryptocoins := domain.Cryptocoins{}
-
-		err = json.Unmarshal(body, &cryptocoins)
-		if err != nil {
-			panic(err)
-		}
-
-		coinList[0] = cryptocoins.Coins.Abyss_idr
-		coinList[1] = cryptocoins.Coins.Ten_idr
-		coinList[2] = cryptocoins.Coins.Dax_idr
-		coinList[3] = cryptocoins.Coins.Dent_idr
-		coinList[4] = cryptocoins.Coins.Doge_idr
-		coinList[5] = cryptocoins.Coins.Gsc_idr
-		coinList[6] = cryptocoins.Coins.Hart_idr
-		coinList[7] = cryptocoins.Coins.Mbl_idr
-		coinList[8] = cryptocoins.Coins.Nxt_idr
-		coinList[9] = cryptocoins.Coins.Pando_idr
-		coinList[10] = cryptocoins.Coins.Slp_idr
-		coinList[11] = cryptocoins.Coins.Xrp_idr
-		// Update and Analyse
-
-		for i := 0; i < len(charts); i++ {
-			temp1, temp2 := UpdateChart(&charts[i], &cryptocoins, frameRate, interval, coinList[i])
-			coinValue[i] = temp2
-			coinStatus[i] = temp1
-		}
-
-		filepath := path.Join("views", "index.html")
+		filepath := path.Join("views", "index.gohtml")
 		tmpl, err := template.ParseFiles(filepath)
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
@@ -284,7 +289,6 @@ func main() {
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 		}
-
 	})
 
 	http.HandleFunc("/favicon.ico", func(w http.ResponseWriter, r *http.Request) {
@@ -295,61 +299,8 @@ func main() {
 	http.ListenAndServe(":8080", nil)
 }
 
-func UpdateChart(charts *domain.Chart, cryptocoins *domain.Cryptocoins, frameRate int, interval int, ticker domain.Ticker) (string, int) {
-	charts.candles[len(charts.candles)-1].Update(ticker)
+func UpdateChart(charts *domain.Chart, cryptocoins *domain.CryptoCoins, frameRate int, interval int, ticker domain.Ticker) (string, int) {
+	charts.Candles[len(charts.Candles)-1].Update(ticker)
 	value, status := charts.CreateNewCandle(frameRate, interval, charts.Pattern)
 	return status, value
-}
-
-func (ch *domain.Chart) CreateNewCandle(frameRate, interval int, callback []func(candle []domain.Candle) string) (int, string) {
-
-	var status string
-	var value int
-
-	ch.TimeSeconds += frameRate
-	if ch.TimeSeconds > interval {
-		for i := 0; i < len(ch.Pattern); i++ {
-			message := ch.Pattern[i](ch.Candles)
-			if message != "" {
-				fmt.Println(ch.Name, "\t", message)
-			}
-		}
-		status = ch.Candles[len(ch.Candles)-1].Status
-		value = ch.Candles[len(ch.Candles)-1].Last
-		fmt.Println(ch.name, "\t", ch.candles[len(ch.candles)-1].last, ch.candles[len(ch.candles)-1].status)
-		ch.Candles[len(ch.Candles)-1].close = ch.candles[len(ch.candles)-1].last
-		ch.Candles = append(ch.Candles, internal.Candle{})
-		ch.timeSeconds = 0
-	} else {
-		value = ch.candles[len(ch.candles)-1].last
-		status = ch.candles[len(ch.candles)-1].status
-	}
-
-	return value, status
-}
-
-func (ca *domain.Candle) Update(t domain.Ticker) {
-	ca.last, _ = strconv.Atoi(t.Last)
-	if ca.open != 0 {
-		if ca.last > ca.high {
-			ca.high = ca.last
-		} else if ca.last < ca.low {
-			ca.low = ca.last
-		}
-
-		if ca.last >= ca.open {
-			ca.status = "Bullish"
-		} else {
-			ca.status = "Bearish"
-		}
-	} else {
-		ca.low = ca.last
-		ca.high = ca.last
-		ca.open = ca.last
-		if ca.last >= ca.open {
-			ca.status = "Bullish"
-		} else {
-			ca.status = "Bearish"
-		}
-	}
 }
