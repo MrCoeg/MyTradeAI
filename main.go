@@ -1,21 +1,20 @@
 package main
 
 import (
-	"encoding/json"
-	"errors"
 	"fmt"
 	"html/template"
-	"io"
 	"net/http"
 	"path"
 	"time"
 	"trading-ai/domain"
+	"trading-ai/pkg"
 )
 
 func main() {
 
 	// Init
 	coinList := make([]domain.Ticker, 12)
+	records := [][]string{}
 	charts := make([]domain.Chart, 12)
 	interval := 60
 	frameRate := 30
@@ -225,37 +224,12 @@ func main() {
 
 	go func() {
 		for {
-			res, err := http.Get("https://indodax.com/api/tickers")
-
-			if err != nil {
-				panic(err)
-			}
-
-			defer res.Body.Close()
-			if res.StatusCode != 200 {
-				panic(errors.New("Not Connected"))
-			}
-
-			body, err := io.ReadAll(res.Body)
 			cryptocoins := domain.CryptoCoins{}
+			pkg.GetJSONFromUrl(&cryptocoins, "https://indodax.com/api/tickers")
+			records = append(records, pkg.UnpackedTickerToString(cryptocoins.Coins))
+			pkg.WriteCSV(records)
+			time.Sleep(30 * time.Second)
 
-			err = json.Unmarshal(body, &cryptocoins)
-			if err != nil {
-				panic(err)
-			}
-
-			coinList[0] = cryptocoins.Coins.AbyssIdr
-			coinList[1] = cryptocoins.Coins.TenIdr
-			coinList[2] = cryptocoins.Coins.DaxIdr
-			coinList[3] = cryptocoins.Coins.DentIdr
-			coinList[4] = cryptocoins.Coins.DogeIdr
-			coinList[5] = cryptocoins.Coins.GscIdr
-			coinList[6] = cryptocoins.Coins.HartIdr
-			coinList[7] = cryptocoins.Coins.MblIdr
-			coinList[8] = cryptocoins.Coins.NxtIdr
-			coinList[9] = cryptocoins.Coins.PandoIdr
-			coinList[10] = cryptocoins.Coins.SlpIdr
-			coinList[11] = cryptocoins.Coins.XrpIdr
 			// Update and Analyse
 
 			for i := 0; i < len(charts); i++ {
@@ -263,8 +237,6 @@ func main() {
 				coinValue[i] = temp2
 				coinStatus[i] = temp1
 			}
-
-			time.Sleep(30 * time.Second)
 		}
 	}()
 
