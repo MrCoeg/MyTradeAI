@@ -24,7 +24,7 @@ func UnpackedTickerToInt(c domain.Coin) []int {
 	unpacked, _ := unpackedData(c)
 	var data = make([]int, len(unpacked))
 	for i, val := range unpacked {
-		data[i], _ = strconv.Atoi(val[0])
+		data[i], _ = strconv.Atoi(val[2])
 	}
 	return data
 }
@@ -33,7 +33,7 @@ func UnpackedTickerToString(c domain.Coin) []string {
 	unpacked, _ := unpackedData(c)
 	var data = make([]string, len(unpacked))
 	for i, val := range unpacked {
-		data[i] = val[0]
+		data[i] = val[2]
 	}
 	return data
 }

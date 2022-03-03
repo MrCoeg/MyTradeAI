@@ -23,7 +23,6 @@ func (ch *Chart) CreateNewCandle(frameRate, interval int, callback []func(candle
 		}
 		status = ch.Candles[len(ch.Candles)-1].Status
 		value = ch.Candles[len(ch.Candles)-1].Last
-		fmt.Println(ch.Name, "\t", ch.Candles[len(ch.Candles)-1].Last, ch.Candles[len(ch.Candles)-1].Status)
 		ch.Candles[len(ch.Candles)-1].Close = ch.Candles[len(ch.Candles)-1].Last
 		ch.Candles = append(ch.Candles, Candle{})
 		ch.TimeSeconds = 0

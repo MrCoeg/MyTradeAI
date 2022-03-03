@@ -9,6 +9,7 @@ type Ticker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type BtcTicker struct {
@@ -20,6 +21,7 @@ type BtcTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type TenTicker struct {
@@ -31,6 +33,7 @@ type TenTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type AaveTicker struct {
@@ -42,6 +45,7 @@ type AaveTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type AbbcTicker struct {
@@ -53,6 +57,7 @@ type AbbcTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type AbyssTicker struct {
@@ -64,6 +69,7 @@ type AbyssTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type ActTicker struct {
@@ -75,6 +81,7 @@ type ActTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type AdaTicker struct {
@@ -86,6 +93,7 @@ type AdaTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type AiozTicker struct {
@@ -97,6 +105,7 @@ type AiozTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type AliceTicker struct {
@@ -108,6 +117,7 @@ type AliceTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type AlgoTicker struct {
@@ -119,6 +129,7 @@ type AlgoTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type AlpacaTicker struct {
@@ -130,6 +141,7 @@ type AlpacaTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type AltTicker struct {
@@ -141,6 +153,7 @@ type AltTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type AmpTicker struct {
@@ -152,6 +165,7 @@ type AmpTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type AnkrTicker struct {
@@ -163,6 +177,7 @@ type AnkrTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type AoaTicker struct {
@@ -174,9 +189,10 @@ type AoaTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
-type Ata struct {
+type AtaTicker struct {
 	High        string `json:"high"`
 	Low         string `json:"low"`
 	Vol         string `json:"vol_ata"`
@@ -185,6 +201,7 @@ type Ata struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type AtomTicker struct {
@@ -196,6 +213,7 @@ type AtomTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type AttTicker struct {
@@ -207,6 +225,7 @@ type AttTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type AudioTicker struct {
@@ -218,6 +237,7 @@ type AudioTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type AxsTicker struct {
@@ -229,6 +249,7 @@ type AxsTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type BakeTicker struct {
@@ -240,6 +261,7 @@ type BakeTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type BalTicker struct {
@@ -251,6 +273,7 @@ type BalTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type BatTicker struct {
@@ -262,6 +285,7 @@ type BatTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type BcdTicker struct {
@@ -273,6 +297,7 @@ type BcdTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type BchTicker struct {
@@ -284,6 +309,7 @@ type BchTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type BeltTicker struct {
@@ -295,6 +321,7 @@ type BeltTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type BnbTicker struct {
@@ -306,6 +333,7 @@ type BnbTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type BnbhedgeTicker struct {
@@ -317,6 +345,7 @@ type BnbhedgeTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type BntTicker struct {
@@ -328,6 +357,7 @@ type BntTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type BotxTicker struct {
@@ -339,6 +369,7 @@ type BotxTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type BsvTicker struct {
@@ -350,6 +381,7 @@ type BsvTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type BtgTicker struct {
@@ -361,6 +393,7 @@ type BtgTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type BtrTicker struct {
@@ -372,6 +405,7 @@ type BtrTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type BtsTicker struct {
@@ -383,6 +417,7 @@ type BtsTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type BusdTicker struct {
@@ -394,6 +429,7 @@ type BusdTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type CakeTicker struct {
@@ -405,6 +441,7 @@ type CakeTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type CbgTicker struct {
@@ -416,6 +453,7 @@ type CbgTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type CelTicker struct {
@@ -427,6 +465,7 @@ type CelTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type CeloTicker struct {
@@ -438,6 +477,7 @@ type CeloTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type ChzTicker struct {
@@ -449,6 +489,7 @@ type ChzTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type CindTicker struct {
@@ -460,6 +501,7 @@ type CindTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type CkbTicker struct {
@@ -471,6 +513,7 @@ type CkbTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type CoalTicker struct {
@@ -482,6 +525,7 @@ type CoalTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type CompTicker struct {
@@ -493,6 +537,7 @@ type CompTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type CfxTicker struct {
@@ -504,6 +549,7 @@ type CfxTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type CotiTicker struct {
@@ -515,6 +561,7 @@ type CotiTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type CreTicker struct {
@@ -526,6 +573,7 @@ type CreTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type CroTicker struct {
@@ -537,6 +585,7 @@ type CroTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type CrvTicker struct {
@@ -548,6 +597,7 @@ type CrvTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type CtsiTicker struct {
@@ -559,6 +609,7 @@ type CtsiTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type DadTicker struct {
@@ -570,6 +621,7 @@ type DadTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type DaiTicker struct {
@@ -581,6 +633,7 @@ type DaiTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type DaoTicker struct {
@@ -592,6 +645,7 @@ type DaoTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type DashTicker struct {
@@ -603,6 +657,7 @@ type DashTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type DaxTicker struct {
@@ -614,6 +669,7 @@ type DaxTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type DentTicker struct {
@@ -625,6 +681,7 @@ type DentTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type DepTicker struct {
@@ -636,6 +693,7 @@ type DepTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type DgbTicker struct {
@@ -647,6 +705,7 @@ type DgbTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type DgxTicker struct {
@@ -658,6 +717,7 @@ type DgxTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type DogeTicker struct {
@@ -669,6 +729,7 @@ type DogeTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type DotTicker struct {
@@ -680,6 +741,7 @@ type DotTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type DviTicker struct {
@@ -691,6 +753,7 @@ type DviTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type DydxTicker struct {
@@ -702,6 +765,7 @@ type DydxTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type EfiTicker struct {
@@ -713,6 +777,7 @@ type EfiTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type EgldTicker struct {
@@ -724,6 +789,7 @@ type EgldTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type EmTicker struct {
@@ -735,6 +801,7 @@ type EmTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type EnjTicker struct {
@@ -746,6 +813,7 @@ type EnjTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type EosTicker struct {
@@ -757,6 +825,7 @@ type EosTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type EtcTicker struct {
@@ -768,6 +837,7 @@ type EtcTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type EthTicker struct {
@@ -779,6 +849,7 @@ type EthTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type EthhedgeTicker struct {
@@ -790,6 +861,7 @@ type EthhedgeTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type EursTicker struct {
@@ -801,6 +873,7 @@ type EursTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type FilTicker struct {
@@ -812,6 +885,7 @@ type FilTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type FiroTicker struct {
@@ -823,6 +897,7 @@ type FiroTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type FtmTicker struct {
@@ -834,6 +909,7 @@ type FtmTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type FttTicker struct {
@@ -845,6 +921,7 @@ type FttTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type GalaTicker struct {
@@ -856,9 +933,10 @@ type GalaTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
-type glchTicker struct {
+type GlchTicker struct {
 	High        string `json:"high"`
 	Low         string `json:"low"`
 	Vol         string `json:"vol_glch"`
@@ -867,6 +945,7 @@ type glchTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type GrtTicker struct {
@@ -878,6 +957,7 @@ type GrtTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type GscTicker struct {
@@ -889,6 +969,7 @@ type GscTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type GxcTicker struct {
@@ -900,6 +981,7 @@ type GxcTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type HartTicker struct {
@@ -911,6 +993,7 @@ type HartTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type HbarTicker struct {
@@ -922,6 +1005,7 @@ type HbarTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type HedgTicker struct {
@@ -933,6 +1017,7 @@ type HedgTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type HedgeTicker struct {
@@ -944,6 +1029,7 @@ type HedgeTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type HibsTicker struct {
@@ -955,6 +1041,7 @@ type HibsTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type HiveTicker struct {
@@ -966,6 +1053,7 @@ type HiveTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type HnstTicker struct {
@@ -977,6 +1065,7 @@ type HnstTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type HntTicker struct {
@@ -988,6 +1077,7 @@ type HntTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type HotTicker struct {
@@ -999,6 +1089,7 @@ type HotTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type HpbTicker struct {
@@ -1010,6 +1101,7 @@ type HpbTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type IdkTicker struct {
@@ -1021,6 +1113,7 @@ type IdkTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type IgnisTicker struct {
@@ -1032,6 +1125,7 @@ type IgnisTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type InjTicker struct {
@@ -1043,6 +1137,7 @@ type InjTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type IostTicker struct {
@@ -1054,6 +1149,7 @@ type IostTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type IotaTicker struct {
@@ -1065,6 +1161,7 @@ type IotaTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type IotxTicker struct {
@@ -1076,6 +1173,7 @@ type IotxTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type JstTicker struct {
@@ -1087,6 +1185,7 @@ type JstTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type KaiTicker struct {
@@ -1098,6 +1197,7 @@ type KaiTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type KdagTicker struct {
@@ -1109,6 +1209,7 @@ type KdagTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type KlayTicker struct {
@@ -1120,6 +1221,7 @@ type KlayTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type KokTicker struct {
@@ -1131,6 +1233,7 @@ type KokTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type KsmTicker struct {
@@ -1142,6 +1245,7 @@ type KsmTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type LetTicker struct {
@@ -1153,9 +1257,10 @@ type LetTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
-type lgoldTicker struct {
+type LgoldTicker struct {
 	High        string `json:"high"`
 	Low         string `json:"low"`
 	Vol         string `json:"vol_lgold"`
@@ -1164,6 +1269,7 @@ type lgoldTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type LinkTicker struct {
@@ -1175,6 +1281,7 @@ type LinkTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type LlandTicker struct {
@@ -1186,6 +1293,7 @@ type LlandTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type LoomTicker struct {
@@ -1197,6 +1305,7 @@ type LoomTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type LrcTicker struct {
@@ -1208,6 +1317,7 @@ type LrcTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type LsilverTicker struct {
@@ -1219,6 +1329,7 @@ type LsilverTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type LtcTicker struct {
@@ -1230,6 +1341,7 @@ type LtcTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type LyfeTicker struct {
@@ -1241,6 +1353,7 @@ type LyfeTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type ManaTicker struct {
@@ -1252,6 +1365,7 @@ type ManaTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type MaticTicker struct {
@@ -1263,6 +1377,7 @@ type MaticTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type MblTicker struct {
@@ -1274,6 +1389,7 @@ type MblTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type MkrTicker struct {
@@ -1285,6 +1401,7 @@ type MkrTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type NearTicker struct {
@@ -1296,6 +1413,7 @@ type NearTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type NeoTicker struct {
@@ -1307,6 +1425,7 @@ type NeoTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type NexoTicker struct {
@@ -1318,6 +1437,7 @@ type NexoTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type NrgTicker struct {
@@ -1329,6 +1449,7 @@ type NrgTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type NxtTicker struct {
@@ -1340,6 +1461,7 @@ type NxtTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type OceanTicker struct {
@@ -1351,6 +1473,7 @@ type OceanTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type OctoTicker struct {
@@ -1362,6 +1485,7 @@ type OctoTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type OkbTicker struct {
@@ -1373,6 +1497,7 @@ type OkbTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type OmgTicker struct {
@@ -1384,6 +1509,7 @@ type OmgTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type OntTicker struct {
@@ -1395,6 +1521,7 @@ type OntTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type OrbsTicker struct {
@@ -1406,6 +1533,7 @@ type OrbsTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type OrcTicker struct {
@@ -1417,6 +1545,7 @@ type OrcTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type OxtTicker struct {
@@ -1428,6 +1557,7 @@ type OxtTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type PandoTicker struct {
@@ -1439,6 +1569,7 @@ type PandoTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type PaxgTicker struct {
@@ -1450,6 +1581,7 @@ type PaxgTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type PerpTicker struct {
@@ -1461,6 +1593,7 @@ type PerpTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type QntTicker struct {
@@ -1472,6 +1605,7 @@ type QntTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type QtumTicker struct {
@@ -1483,6 +1617,7 @@ type QtumTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type RenTicker struct {
@@ -1494,6 +1629,7 @@ type RenTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type RepTicker struct {
@@ -1505,6 +1641,7 @@ type RepTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type RevTicker struct {
@@ -1516,6 +1653,7 @@ type RevTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type RvnTicker struct {
@@ -1527,6 +1665,7 @@ type RvnTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type SandTicker struct {
@@ -1538,6 +1677,7 @@ type SandTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type SfiTicker struct {
@@ -1549,6 +1689,7 @@ type SfiTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type ShillTicker struct {
@@ -1560,6 +1701,7 @@ type ShillTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type SignaTicker struct {
@@ -1571,6 +1713,7 @@ type SignaTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type SlpTicker struct {
@@ -1582,6 +1725,7 @@ type SlpTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type SnxTicker struct {
@@ -1593,6 +1737,7 @@ type SnxTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type SolTicker struct {
@@ -1604,6 +1749,7 @@ type SolTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type SolveTicker struct {
@@ -1615,6 +1761,7 @@ type SolveTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type SrmTicker struct {
@@ -1626,6 +1773,7 @@ type SrmTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type StorjTicker struct {
@@ -1637,6 +1785,7 @@ type StorjTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type SumoTicker struct {
@@ -1648,6 +1797,7 @@ type SumoTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type SushiTicker struct {
@@ -1659,6 +1809,7 @@ type SushiTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type SxpTicker struct {
@@ -1670,6 +1821,7 @@ type SxpTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type TadTicker struct {
@@ -1681,6 +1833,7 @@ type TadTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type TelTicker struct {
@@ -1692,6 +1845,7 @@ type TelTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type TfuelTicker struct {
@@ -1703,6 +1857,7 @@ type TfuelTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type ThetaTicker struct {
@@ -1714,6 +1869,7 @@ type ThetaTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type TitanTicker struct {
@@ -1725,6 +1881,7 @@ type TitanTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type TokoTicker struct {
@@ -1736,6 +1893,7 @@ type TokoTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type TrxTicker struct {
@@ -1747,6 +1905,7 @@ type TrxTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type UmaTicker struct {
@@ -1758,6 +1917,7 @@ type UmaTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type UniTicker struct {
@@ -1769,6 +1929,7 @@ type UniTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type UsdcTicker struct {
@@ -1780,6 +1941,7 @@ type UsdcTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type UsdpTicker struct {
@@ -1791,6 +1953,7 @@ type UsdpTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type UsdtTicker struct {
@@ -1802,6 +1965,7 @@ type UsdtTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type VeloTicker struct {
@@ -1813,6 +1977,7 @@ type VeloTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type VexTicker struct {
@@ -1824,6 +1989,7 @@ type VexTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type VraTicker struct {
@@ -1835,6 +2001,7 @@ type VraTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type VsysTicker struct {
@@ -1846,6 +2013,7 @@ type VsysTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type WavesTicker struct {
@@ -1857,6 +2025,7 @@ type WavesTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type WbtcTicker struct {
@@ -1868,6 +2037,7 @@ type WbtcTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type WnxmTicker struct {
@@ -1879,6 +2049,7 @@ type WnxmTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type WozxTicker struct {
@@ -1890,6 +2061,7 @@ type WozxTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type XchTicker struct {
@@ -1901,6 +2073,7 @@ type XchTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type XdcTicker struct {
@@ -1912,6 +2085,7 @@ type XdcTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type XemTicker struct {
@@ -1923,6 +2097,7 @@ type XemTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type XlmTicker struct {
@@ -1934,6 +2109,7 @@ type XlmTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type XmrTicker struct {
@@ -1945,6 +2121,7 @@ type XmrTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type XrpTicker struct {
@@ -1956,6 +2133,7 @@ type XrpTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type XrphedgeTicker struct {
@@ -1967,6 +2145,7 @@ type XrphedgeTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type XsgdTicker struct {
@@ -1978,6 +2157,7 @@ type XsgdTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type XtzTicker struct {
@@ -1989,6 +2169,7 @@ type XtzTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type XvsTicker struct {
@@ -2000,6 +2181,7 @@ type XvsTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type YfiTicker struct {
@@ -2011,6 +2193,7 @@ type YfiTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type YfiiTicker struct {
@@ -2022,6 +2205,7 @@ type YfiiTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type ZecTicker struct {
@@ -2033,6 +2217,7 @@ type ZecTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type ZilTicker struct {
@@ -2044,6 +2229,7 @@ type ZilTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
+	Name        string `json:"name"`
 }
 
 type ZrxTicker struct {
@@ -2055,49 +2241,5 @@ type ZrxTicker struct {
 	Buy         string `json:"buy"`
 	Sell        string `json:"sell"`
 	Server_time int    `json:"server_time"`
-}
-
-func (c *BtcTicker) ChangeCatcherToTicker() (t Ticker) {
-	t.Buy = c.Buy
-	t.High = c.High
-	t.Last = c.Last
-	t.Low = c.Low
-	t.Sell = c.Sell
-	t.Vol = c.Vol
-	t.Vol_idr = c.Vol_idr
-	return t
-}
-
-func (c *AaveTicker) ChangeCatcherToTicker() (t Ticker) {
-	t.Buy = c.Buy
-	t.High = c.High
-	t.Last = c.Last
-	t.Low = c.Low
-	t.Sell = c.Sell
-	t.Vol = c.Vol
-	t.Vol_idr = c.Vol_idr
-
-	return t
-}
-
-func (c *AbbcTicker) ChangeCatcherToTicker() (t Ticker) {
-	t.Buy = c.Buy
-	t.High = c.High
-	t.Last = c.Last
-	t.Low = c.Low
-	t.Sell = c.Sell
-	t.Vol = c.Vol
-	t.Vol_idr = c.Vol_idr
-	return t
-}
-
-func (c *AbyssTicker) ChangeCatcherToTicker() (t Ticker) {
-	t.Buy = c.Buy
-	t.High = c.High
-	t.Last = c.Last
-	t.Low = c.Low
-	t.Sell = c.Sell
-	t.Vol = c.Vol
-	t.Vol_idr = c.Vol_idr
-	return t
+	Name        string `json:"name"`
 }
