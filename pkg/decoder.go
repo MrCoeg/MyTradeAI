@@ -20,20 +20,20 @@ func unpackedData(c domain.Coin) (unpacked [][]string, packed []domain.Ticker) {
 	return data, t
 }
 
-func UnpackedTickerToInt(c domain.Coin) []int {
+func UnpackedTickerToInt(c domain.Coin, tickerData int) []int {
 	unpacked, _ := unpackedData(c)
 	var data = make([]int, len(unpacked))
 	for i, val := range unpacked {
-		data[i], _ = strconv.Atoi(val[2])
+		data[i], _ = strconv.Atoi(val[tickerData])
 	}
 	return data
 }
 
-func UnpackedTickerToString(c domain.Coin) []string {
+func UnpackedTickerToString(c domain.Coin, tickerData int) []string {
 	unpacked, _ := unpackedData(c)
 	var data = make([]string, len(unpacked))
 	for i, val := range unpacked {
-		data[i] = val[2]
+		data[i] = val[tickerData]
 	}
 	return data
 }
