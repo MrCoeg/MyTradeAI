@@ -8,7 +8,7 @@ import (
 )
 
 func BotInitialization() (tgbotapi.UpdatesChannel, *tgbotapi.BotAPI) {
-	bot, err := tgbotapi.NewBotAPI("5202255463:AAFacflmP_j8EbTnQ47BwJwr97PvvXhsR8A")
+	bot, err := tgbotapi.NewBotAPI("TOKEN HERE")
 	if err != nil {
 		log.Panic(err)
 	}
